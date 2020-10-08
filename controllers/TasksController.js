@@ -46,3 +46,20 @@ exports.complete = (req, res) => {
       });
   });
 };
+
+exports.get = (req, res) => {
+  let tasks = Task.all().then((tasks) => {
+    res.json(tasks)
+  });
+}
+
+exports.getSpecific = (req, res) => {
+  let id = req.params.id;
+  Task.find(id).then((task) => {
+    if (task == null) {
+      res.status(404).send('Not found');
+      return;
+    }
+    res.json(task)
+  });
+};

@@ -57,7 +57,7 @@ function deleteTask(id) {
 
 function completeTask(id) {
   $.ajax({
-      url: '/task/' + id,
+      url: '/task/complete/' + id,
       success: function (task) {
         document.getElementById('done-'+id).remove();
         document.getElementById('task-'+id).classList.add('bg-light');

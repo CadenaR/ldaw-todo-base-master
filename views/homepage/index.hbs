@@ -28,7 +28,7 @@
         <div class="card-body">
           <p class="card-text">{{ description }}</p>
           {{#eq status 'pending'}}
-            <a id="done-{{id}}" href="#" onclick="completeTask({{ id }})" class="card-link">Done</a>
+            <a id="done-{{id}}" href="" onclick="completeTask({{ id }})" class="card-link">Done</a>
           {{/eq}}
             <a href="#" onclick="deleteTask({{ id }})" class="card-link">Delete</a>
         </div>
