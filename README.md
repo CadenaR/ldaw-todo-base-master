@@ -14,3 +14,20 @@ npm install
 ```
 node server.js
 ```
+
+# Proyecto React
+
+```shell
+cd basic-todo-app
+```
+
+## Instalación
+
+```shell
+yarn
+```
+
+## Ejecución
+```
+yarn start
+```
